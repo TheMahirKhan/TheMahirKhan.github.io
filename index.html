@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahir Khan" />
+  <title>Mahir Khan</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- CANVAS — Animated background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">Mahir Khan</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Mahir <em>Khan</em></h1>
+      <p class="hero-tagline">Junior Software Developer &amp; Creative Technologist</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+
+      <div class="section-label reveal">001 — About</div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-heading">Junior Software Dev.</h2>
+          <p>
+            I'm a Junior Software Developer from Rajasthan. I have experience building
+            real-world systems and web applications. My vision is to solve every problem
+            that can be addressed using advanced technology — using both my problem-solving
+            and programming skills.
+          </p>
+          <p>
+            When I'm not writing code, you'll find me hiking trails, shooting film photography,
+            or experimenting with generative art.
+          </p>
+          <ul class="skills-list">
+            <li>C &amp; C++</li>
+            <li>Python</li>
+            <li>JavaScript / React</li>
+            <li>MySQL</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+
+        <div class="about-card reveal reveal-delay">
+          <div class="about-card-inner">
+            <div class="stat">
+              <span class="stat-num" data-target="4">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <!-- <div class="stat">
+              <span class="stat-num" data-target="8">0</span>
+              <span class="stat-label">Happy Clients</span>
+            </div> -->
+            <div class="about-availability">
+              <span class="avail-dot"></span> Available for internships &amp; project collaborations
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+
+      <div class="section-label reveal">002 — Projects</div>
+      <h2 class="section-heading reveal">Recent <em>work</em></h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <span class="project-number">01</span>
+            <a href="#" aria-label="View project" class="icon-link">↗</a>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">
+            A real-time Student management system with data base integration
+          </p>
+          <ul class="project-tags">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>WebSockets</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <article class="project-card project-card--accent reveal">
+          <div class="project-card-header">
+            <span class="project-number">02</span>
+            <a href="#" aria-label="View project" class="icon-link">↗</a>
+          </div>
+          <h3 class="project-title">Railway Ticket Reservation System</h3>
+          <p class="project-desc">
+            Railway ticket reservation system with real-time seat availability and platform no.
+          </p>
+          <ul class="project-tags">
+            <li>Next.js</li>
+            <li>GraphQL</li>
+            <li>TypeScript</li>
+            <li>Docker</li>
+          </ul>
+        </article>
+
+        <!-- <article class="project-card reveal">
+          <div class="project-card-header">
+            <span class="project-number">03</span>
+            <a href="#" aria-label="View project" class="icon-link">↗</a>
+          </div>
+          <h3 class="project-title">Folio Finance</h3>
+          <p class="project-desc">
+            Personal finance tracker with AI-powered spend categorisation, budget forecasting,
+            and PDF report exports. Syncs with 3000+ banks via Plaid.
+          </p>
+          <ul class="project-tags">
+            <li>React Native</li>
+            <li>Python</li>
+            <li>Plaid API</li>
+            <li>AWS Lambda</li>
+          </ul>
+        </article> -->
+
+        <!-- <article class="project-card reveal">
+          <div class="project-card-header">
+            <span class="project-number">04</span>
+            <a href="#" aria-label="View project" class="icon-link">↗</a>
+          </div>
+          <h3 class="project-title">Pallet — Design System</h3>
+          <p class="project-desc">
+            Open-source React component library with 60+ accessible components, Storybook docs,
+            Figma kit, and automated visual regression tests.
+          </p>
+          <ul class="project-tags">
+            <li>React</li>
+            <li>Storybook</li>
+            <li>Figma</li>
+            <li>Chromatic</li>
+          </ul>
+        </article> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+
+      <div class="section-label reveal">003 — Contact</div>
+
+      <div class="contact-inner reveal">
+        <h2 class="section-heading contact-heading">Let's build<br />something <em>great</em>.</h2>
+        <p class="contact-sub">Have a project in mind or just want to say hi? My inbox is always open.</p>
+        <a href="mailto:themahirk@gmail.com" class="btn btn-primary btn-large">Say Hello →</a>
+      </div>
+
+      <div class="contact-links reveal">
+        <a href="https://github.com/TheMahirKhan" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/TheMahirKhan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+        <a href="/Mahir_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Mahir Khan</strong>, with the help of Claude.ai</p>
+      <!-- <p class="footer-year">© <span id="year"></span></p> -->
+    </div>
+  </footer>
+
+  <!-- SCRIPTS — canvas first, then main -->
+  <script src="js/canvas.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
