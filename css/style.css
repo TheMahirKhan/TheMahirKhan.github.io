@@ -740,7 +740,7 @@ p {
 }
 
 .contact-links a {
-  font-size: 0.75rem;
+  font-size: .99rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--clr-muted);
